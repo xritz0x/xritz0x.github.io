@@ -134,3 +134,31 @@ const prevFunction = () => {
 */
 prev.addEventListener('click',prevFunction);
 next.addEventListener('click',nextFunction);
+/*
+	** Remove placeholder in focusin and return it when action is focusout
+*/
+let inputs = Array.from(document.querySelectorAll('input'));
+inputs.forEach((input) => {
+	let placeData = input.getAttribute('placeholder');
+	input.addEventListener('focusin',() => {
+		input.setAttribute('placeholder','');
+	})
+	input.addEventListener('focusout',() => {
+		input.setAttribute('placeholder',placeData);
+	})
+})
+/*
+	** Put Value in textarea like input and remove it in focusin
+*/
+
+let textarea = document.querySelector('textarea');
+textarea.addEventListener('blur',function() {
+	if(this.value === ""){
+	this.value = "Your Message";
+	}
+});
+textarea.addEventListener('focus',function() {
+	if (this.value === "Your Message"){
+		this.value = "";
+	}
+})

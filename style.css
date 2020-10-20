@@ -25,12 +25,20 @@ body {margin: 0;}
 	list-style: none;
 	display: flex;
 	padding-top:25px;
+	padding-left:0;
 }
 .header .container ul.nav-ul{text-transform: uppercase;}
 .header .container ul.nav-ul li , .header .container .header-details .me ul li{
 	margin: 0 auto;
 	color: #fff;
 	letter-spacing: 1.5px
+}
+.header .container ul.nav-ul li a {
+	color: #fff;
+}
+.header .container ul.nav-ul li a:hover {
+	color: #fff;
+	text-decoration: none;
 }
 .header .container .header-details {
 	margin-top: 20vh;
@@ -98,9 +106,10 @@ body {margin: 0;}
 .about-me .container .row-about .meters .meter span.name.name-1{width: 70%;}
 .about-me .container .row-about .meters .meter span.name.name-2{width: 50%;}
 .about-me .container .row-about .meters .meter span.name.name-3{width: 100%;}
-.about-me .container .row-about .meters .meter span.name.name-4{width: 100%;}
-.about-me .container .row-about .meters .meter span.name.name-5{width: 45%;}
-.about-me .container .row-about .meters .meter span.name.name-6{width: 65%;}
+.about-me .container .row-about .meters .meter span.name.name-4{width: 100%;display: ruby;}
+.about-me .container .row-about .meters .meter span.name.name-5{width: 45%;;display: ruby;}
+.about-me .container .row-about .meters .meter span.name.name-4 .percent,
+.about-me .container .row-about .meters .meter span.name.name-5 .percent {top:0%;}
 @media only screen and (max-width: 768px) {
 	.about-me .container .row-about .about-pic img {
 		margin-top: 10rem
@@ -335,6 +344,9 @@ body {margin: 0;}
     left: 6%;
     top: 40vh;
 }
+.description h3 {
+	text-align: center;
+}
 .section p {margin-right: 30px}
 }
 @media screen and (max-width: 991px) and (min-width: 769px) {
@@ -345,4 +357,75 @@ body {margin: 0;}
 }
 @media screen and (orientation: landscape){
 
+}
+
+/*
+	** Slider Sections Ends Here
+	** Contact Me Section Starts Here
+*/
+.contact-me {
+	background-color:  #ffd670;
+	padding: 50px 0 20px 0;
+}
+.contact-me h3 {color: #5B6074;font-weight: 700;font-size: 2.5rem}
+.contact-me > .container > hr {width: 5%;margin-top: 0.7rem;border:2px solid #aaacb9;}
+.contact-me .container .row .col-6 {
+	margin: 25px auto;
+}
+.contact-me .container .row .col-6 input{
+	height: 50px;
+	width: 100%;
+	outline: 0;
+	border: 0;
+	padding: 10px;
+	color: #CACACA;
+	background-color: #F3F3F3;
+	border-radius: 5px;
+	font-size: 17px;
+}
+.contact-me .container .row .col-12 textarea {
+	height: 280px;
+	width: 100%;
+	outline: 0;
+	border: 0;
+	padding: 10px;
+	color: #CACACA;
+	background-color: #F3F3F3;
+	border-radius: 5px;
+	font-size: 19px;
+	resize: none;
+}
+.contact-me .container button {
+	background: none;
+	outline: 0;
+	border: none;
+	margin: 40px auto 25px auto;
+	text-transform: uppercase;
+	color: white;
+	font-weight: 500;
+	font-size: 19px;
+	padding: 17px;
+	border-radius: 5px;
+	-moz-transition: all ease-in-out 0.2s;
+	-o-transition: all ease-in-out 0.2s;
+	-webkit-transition: all ease-in-out 0.2s;
+	transition: all ease-in-out 0.4s;
+}
+.contact-me .container button:hover{background-color: #ffc941}
+/*
+	** End of Contact-me section
+	** begaining of footer section
+*/
+.footer {
+	background-color: #3e364d;
+}
+.footer .container {
+	padding: 1.2rem;
+}
+.footer .container span a {
+	color: #ffd670
+}
+.footer .container span a:hover {
+	text-decoration: none;
+	color: #ffd670;
 }
