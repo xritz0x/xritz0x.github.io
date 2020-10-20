@@ -273,6 +273,15 @@ body {margin: 0;}
 	margin: 80px auto;
 	width: 100%;
 }
+.section p , .section strong{
+	font-family: 'Sansita Swashed', cursive;
+	font-size: 20px;
+}
+.section strong {
+	font-family: 'Sansita Swashed', cursive;
+
+}
+
 
 .section.active {opacity: 1}
 .nav-control {
@@ -316,6 +325,7 @@ body {margin: 0;}
 .nav-control .disabled {color: #dfdfdf;cursor: no-drop;}
 .nav-control .prev {float: left;}
 .nav-control .next {float: right;}
+.section img {margin-bottom: 10px}
 /*@media screen and (max-width: 441px){
 	.section p,.section strong{margin-right: 30px}
 	.nav-control {left: 3%}

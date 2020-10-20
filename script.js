@@ -57,6 +57,7 @@ for (let i = 1;i <= sectionsLength ; i++){
 }
 let theList = document.querySelector(".nav-control .dots ul"); // cashing the created ul
 ulist = Array.from(theList.children); // cashing ul li in var
+document.querySelector('.nav-control ul li:nth-child(1)').classList.add('active');
 const toggleActive = () => { // remove all the elements which have class active and li
 	sections.forEach(sec => {
 		sec.classList.remove('active');
@@ -83,8 +84,6 @@ const checker = () => {
 		}
 
 }
-
-checker();
 ulist.forEach(lis => { // if i clicked on li it change me to the section which have "data-index"'s value
 	lis.addEventListener('click',() => {
 		current = lis.getAttribute('data-index');
@@ -96,6 +95,22 @@ ulist.forEach(lis => { // if i clicked on li it change me to the section which h
 				*/
 	});
 });
+/*
+	** its automatically slides !! how cool is it ?
+*/
+let automatic = () => {
+	let count = setInterval(() => {
+		if (current < sectionsLength){ // if current less than sections length its gonna add +1
+				current++;
+				checker();
+			}else if (current == sectionsLength){ // double = because one of them is string and the another is number so its ==
+			    current =1;
+			    checker();
+			}
+
+	} ,3000) 
+}
+automatic();
 
 const nextFunction = () => {
 	if (current > 0 && current <= sectionsLength -1 /* bc if it's the last sectioni can click next */){
@@ -114,5 +129,8 @@ const prevFunction = () => {
 		checker();
 	}
 }
+/*
+	** creating autamatic slider
+*/
 prev.addEventListener('click',prevFunction);
 next.addEventListener('click',nextFunction);
