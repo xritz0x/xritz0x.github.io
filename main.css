@@ -1,0 +1,431 @@
+* {
+  box-sizing: border-box;
+}
+div {font-family: 'Roboto Slab', serif;color: #fff}
+body {margin: 0;}
+.header {
+	margin: 0;
+	background: url('imgs/header.jpg') no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 100vh;
+	position: relative;
+}
+.layer {
+	background-color: rgba(13, 19, 38, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.header .container ul.nav-ul {
+	list-style: none;
+	display: flex;
+	padding-top:25px;
+	padding-left:0;
+}
+.header .container ul.nav-ul{text-transform: uppercase;}
+.header .container ul.nav-ul li , .header .container .header-details .me ul li{
+	margin: 0 auto;
+	color: #fff;
+	letter-spacing: 1.5px
+}
+.header .container ul.nav-ul li a {
+	color: #fff;
+}
+.header .container ul.nav-ul li a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+.header .container .header-details {
+	margin-top: 20vh;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	color: #fff
+}
+.header .container .header-details img{
+	margin: 0 auto;
+	display: block;
+}
+.header .container .header-details .det {margin-top:50px;text-align: center;}
+.header .container .header-details .row div span {color: #FFD670}
+.header .container .header-details .row {padding-top:25px;text-align: center;}
+/*
+	## End Of Header Style
+	## Begaining of About me Section
+*/ 
+.about-me {background: #524664;padding-top: 15px;padding-bottom: 15px}
+.about-head img {margin: 20px 0;}
+.about-head hr {margin: 0 auto;width: 25%;border: 1px solid #736588;}
+.about-head span {margin-top: 8px;margin-bottom: 50px;color: #b7b4b4;display: inline-block;}
+.about-me .container .row-about .description p {
+	color :#C4C0CF;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 30px;
+	word-spacing: 2px;
+	text-align: center;
+	text-align: left;
+}
+.about-me .container .row-about .description h3 {text-align: left;font-size: 20px;margin-bottom: 20px}
+.about-me .container .row-about .about-pic img{
+	width: 100%;
+	border-radius: 50%;
+	margin-top: 3.5rem;
+	padding: 10px;
+	border: 4px solid #f00;
+}
+.about-me .container .row-about .meters > span{
+	color: #C4C0CF;
+	font-weight: 400;
+	margin: 35px 0 15px 0;
+	display: block;
+	text-align: left;
+}
+.about-me .container .row-about .meters .meter {
+	background-color: #615474;
+	height: 35px;
+	margin-bottom: 10px;
+	position: relative;
+	text-align: left;
+	border-radius: 25px;
+}
+.about-me .container .row-about .meters .meter span.name {
+	line-height: 35px;
+	padding-left: 10px;
+	font-size: 13px;
+	background-color: red;
+	position: absolute;
+	border-radius: 25px
+}
+.about-me .container .row-about .meters .meter span.name .percent {position: absolute;right: 0;padding-right: 7px}
+.about-me .container .row-about .meters .meter span.name.name-1{width: 70%;}
+.about-me .container .row-about .meters .meter span.name.name-2{width: 50%;}
+.about-me .container .row-about .meters .meter span.name.name-3{width: 100%;}
+.about-me .container .row-about .meters .meter span.name.name-4{width: 100%;display: ruby;}
+.about-me .container .row-about .meters .meter span.name.name-5{width: 45%;;display: ruby;}
+.about-me .container .row-about .meters .meter span.name.name-4 .percent,
+.about-me .container .row-about .meters .meter span.name.name-5 .percent {top:0%;}
+@media only screen and (max-width: 768px) {
+	.about-me .container .row-about .about-pic img {
+		margin-top: 10rem
+	}
+}
+/*
+	## End Of About Me Section
+	## Begaining Of Porfolio Section
+*/
+.portfolio {
+	background: #FFD670;
+	padding: 50px 0;
+}
+.portfolio .container .row .col {margin: 10px 0;}
+.portfolio .container .row .col img {width: 100%;height: 100%}
+.portfolio .about-head hr {border: 1px solid #fff;}
+.portfolio .about-head span {color: #fff;}
+.col.col-12.col-md-3.port-div {
+    padding: 0!important;
+    position: relative;
+    margin: 10px 0;
+}
+.port-div span {
+	position: absolute;
+	left: 35%;
+	top: 45%;
+	font-size: 22px;
+}
+/*
+	## animated imgs in portfolio
+*/
+.img1 {
+	  background-image: url("imgs/1.jpg");
+}
+.img2 {
+	  background-image: url("imgs/2.jpg");
+}
+.img3 {
+	  background-image: url("imgs/3.jpg");
+}
+.img4 {
+	  background-image: url("imgs/4.jpg");
+}
+.img5 {
+	  background-image: url("imgs/5.jpg");
+}
+.img6 {
+	  background-image: url("imgs/6.jpg");
+}
+.img7 {
+	  background-image: url("imgs/7.jpg");
+}
+.img8 {
+	  background-image: url("imgs/8.jpg");
+}
+.img9 {
+	  background-image: url("imgs/9.jpg");
+}
+.img10 {
+	  background-image: url("imgs/10.jpg");
+}
+.img11 {
+	  background-image: url("imgs/11.jpg");
+}
+.img12 {
+	  background-image: url("imgs/12.jpg");
+}
+.container__image {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+
+  background-size: cover;
+  transition: ease-in-out .3s;
+  z-index: 2;
+  margin: 0 auto;
+}
+.container__image:before {
+  content: ' ';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  background: inherit;
+  background-position: bottom;
+  filter: blur(40px) saturate(0%);
+  transform: scaleX(0.4);
+  transition: ease-in-out .4s;
+  border-radius: 120px;
+  transform-origin: right;
+  opacity: 0;
+  z-index: -1;
+}
+.container__image:hover {
+  border-radius: 0;
+  width: 100%;
+  height: 310px;
+}
+.container__image:hover:before {
+  width: 100%;
+/*  opacity: 0.18; */
+  filter: blur(10px) saturate(100%);
+  transform: scale(2.8) translate3d(-18%, 0px, 0px);
+}
+
+/*
+	** End of Portfolio
+	** Begaining of some articles
+*/
+.articles {
+	padding-top: 50px;
+}
+.content {
+	background-color: #F3F3F3;
+	padding: 15px;
+}
+.content h6 {
+	color: #373C4F;
+	font-size: 14px;
+}
+.content p {
+	font-weight: 300;
+	font-size: 13px;
+	font-family: 'Sansita Swashed', cursive;
+	color: #898D9D
+}
+.art {margin-top:15px;margin-bottom: 15px;}
+.art a {
+	color: #FFD670;
+	font-size: 15px;
+}
+.art a:hover {
+	color:#FFD670;
+}
+.art img {
+    width: 100%;
+
+}
+
+/*
+	** End of articles
+	** Begaining of some qoutes
+*/
+
+.slider-q {
+	background: url('imgs/galaxy.jpg') no-repeat center center;
+	background-size: cover;
+	height: 350px;
+	overflow: hidden;
+}
+.container {position: relative;}
+/*
+	** from here i've started building the slider
+	** i put z-index : 1; to be layer n.1
+	** opacity :0; bc this idea depends on this property when i show slide the other disapear , got it ?
+*/
+.section {
+	position: absolute;
+	opacity: 0;
+	transition: opacity 1s;
+	z-index: 1;
+	max-width: 100%;
+	margin: 80px auto;
+	width: 100%;
+}
+.section p , .section strong{
+	font-family: 'Sansita Swashed', cursive;
+	font-size: 20px;
+}
+.section strong {
+	font-family: 'Sansita Swashed', cursive;
+
+}
+
+
+.section.active {opacity: 1}
+.nav-control {
+    max-width: 400px;
+    position: relative; /* because i want it to save it's place not to swim like abs */
+    top: 38vh;
+    left: 34%;
+}
+.nav-control .prev,
+.nav-control .next {
+	width: 20%;
+	user-select: none;
+	cursor: pointer;
+	text-align: center;
+}
+.nav-control .dots {
+	width: 60%;
+	float: left;
+	position: relative; /* here is too relative bc if it's abs everything will swim and i have to create positions*/
+}
+.nav-control .dots ul li {
+    display: inline-block;
+	background-color: #c8c8c8;
+	overflow: hidden;
+	height: 28px;
+	width: 28px;
+	line-height: 28px;
+	text-align: center;
+	margin: 0 3px -9px 0;
+	border-radius: 6px;
+	cursor: pointer;
+}
+.nav-control .dots ul li.active{background-color: #868484;}
+.nav-control .dots ul {
+	display: inline-block;
+	position: absolute; /* it's abs in relative div .dots */
+	top: 0;
+	left: 30%;
+
+}
+.nav-control .disabled {color: #dfdfdf;cursor: no-drop;}
+.nav-control .prev {float: left;}
+.nav-control .next {float: right;}
+.section img {margin-bottom: 10px}
+/*@media screen and (max-width: 441px){
+	.section p,.section strong{margin-right: 30px}
+	.nav-control {left: 3%}
+}*/
+@media screen and (min-width: 442px) and (max-width: 768px) {
+.nav-control {
+    left: 6%;
+    top: 40vh;
+}
+.description h3 {
+	text-align: center;
+}
+.section p {margin-right: 30px}
+}
+@media screen and (max-width: 991px) and (min-width: 769px) {
+	.nav-control {left: 24%}
+}
+@media screen (min-width: 992px) and (max-width: 1199px) {
+	.nav-control {left: 26%}
+}
+@media screen and (orientation: landscape){
+
+}
+
+/*
+	** Slider Sections Ends Here
+	** Contact Me Section Starts Here
+*/
+.contact-me {
+	background-color:  #ffd670;
+	padding: 50px 0 20px 0;
+}
+.contact-me h3 {color: #5B6074;font-weight: 700;font-size: 2.5rem}
+.contact-me > .container > hr {width: 5%;margin-top: 0.7rem;border:2px solid #aaacb9;}
+.contact-me .container .row .col-6 {
+	margin: 25px auto;
+}
+.contact-me .container .row .col-6 input{
+	height: 50px;
+	width: 100%;
+	outline: 0;
+	border: 0;
+	padding: 10px;
+	color: #CACACA;
+	background-color: #F3F3F3;
+	border-radius: 5px;
+	font-size: 17px;
+}
+.contact-me .container .row .col-12 textarea {
+	height: 280px;
+	width: 100%;
+	outline: 0;
+	border: 0;
+	padding: 10px;
+	color: #CACACA;
+	background-color: #F3F3F3;
+	border-radius: 5px;
+	font-size: 19px;
+	resize: none;
+}
+.contact-me .container button {
+	background: none;
+	outline: 0;
+	border: none;
+	margin: 40px auto 25px auto;
+	text-transform: uppercase;
+	color: white;
+	font-weight: 500;
+	font-size: 19px;
+	padding: 17px;
+	border-radius: 5px;
+	-moz-transition: all ease-in-out 0.2s;
+	-o-transition: all ease-in-out 0.2s;
+	-webkit-transition: all ease-in-out 0.2s;
+	transition: all ease-in-out 0.4s;
+}
+.contact-me .container button:hover{background-color: #ffc941}
+/*
+	** End of Contact-me section
+	** begaining of footer section
+*/
+.footer {
+	background-color: #3e364d;
+}
+.footer .container {
+	padding: 1.2rem;
+}
+.footer .container span a {
+	color: #ffd670
+}
+.footer .container span a:hover {
+	text-decoration: none;
+	color: #ffd670;
+}
