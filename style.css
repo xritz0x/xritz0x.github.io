@@ -295,14 +295,17 @@ body {margin: 0;}
 }
 .nav-control .dots ul li {
     display: inline-block;
-	background-color: red;
+	background-color: #c8c8c8;
 	overflow: hidden;
 	height: 28px;
 	width: 28px;
 	line-height: 28px;
 	text-align: center;
-	margin: 0 0 -9px 0;
+	margin: 0 3px -9px 0;
+	border-radius: 6px;
+	cursor: pointer;
 }
+.nav-control .dots ul li.active{background-color: #868484;}
 .nav-control .dots ul {
 	display: inline-block;
 	position: absolute; /* it's abs in relative div .dots */
@@ -310,6 +313,7 @@ body {margin: 0;}
 	left: 30%;
 
 }
+.nav-control .disabled {color: #dfdfdf;cursor: no-drop;}
 .nav-control .prev {float: left;}
 .nav-control .next {float: right;}
 /*@media screen and (max-width: 441px){
